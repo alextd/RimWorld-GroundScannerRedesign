@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="GroundPenetratingScanner"]/comps</xpath>
+		<value>
+			<li Class="Ground_Scanner_Redesign.CompProperties_TerrainMineralScanner">
+				<radius>600</radius>
+				<!-- well past needed, placed in the center of a large, 300 map, max distance to corners is about 200 -->
+				<daysToRadius>60</daysToRadius>
+				<!-- 10 radius per day, 20 days will get most coverage needed -->
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="GroundPenetratingScanner"]</xpath>
+		<value>
+			<tickerType>Rare</tickerType>
+		</value>
+	</Operation>
+
+	
+</Patch>
