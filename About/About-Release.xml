@@ -6,8 +6,11 @@
 		<li>1.0</li>
 	</supportedVersions>
 	<description>Redesigns how the Ground-penetrating scanner works.
+	
 It builds area over time, so you need to keep it on, and the high power usage is actually impactful.
+
 It'll remember what was scanned, so you don't need to power it on to see the known resources.
+
 It detects surface minerals as well.
 	</description>
 	<url>https://steamcommunity.com/id/Uuugggg/myworkshopfiles/?appid=294100</url>
