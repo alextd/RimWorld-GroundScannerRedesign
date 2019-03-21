@@ -71,12 +71,13 @@ namespace Ground_Scanner_Redesign
 
 		public override void PostDrawExtraSelectionOverlays()
 		{
-			if (this.CurrentRadius() < parent.Map.Size.x)
-			{
-				GenDraw.DrawFieldEdges(AffectedCells().ToList());
+			if (this.Working())
+				if (this.CurrentRadius() < parent.Map.Size.x)
+				{
+					GenDraw.DrawFieldEdges(AffectedCells().ToList());
 
-				//GenDraw.DrawRadiusRing(parent.Position, CurrentRadius);
-			}
+					//GenDraw.DrawRadiusRing(parent.Position, CurrentRadius);
+				}
 		}
 	}
 
