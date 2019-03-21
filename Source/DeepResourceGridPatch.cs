@@ -18,7 +18,6 @@ namespace Ground_Scanner_Redesign
 			if (__result)
 				if (!___map.GetComponent<MapCompTerrainMineralScanned>()[index])
 				{
-					Log.Message($"Couldn't see {CellIndicesUtility.IndexToCell(index, ___map.Size.x)} Due to MapCompTerrainMineralScanned");
 					__result = false;
 				}
 		}

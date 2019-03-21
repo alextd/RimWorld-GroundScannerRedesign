@@ -33,7 +33,6 @@ namespace Ground_Scanner_Redesign
 
 		protected override void AffectCell(IntVec3 c)
 		{
-			//Log.Message($"Adding {c} to MapCompTerrainMineralScanned");
 			comp[c] = true;
 		}
 
